@@ -34,8 +34,20 @@ var coundownRefreshInvoker = setInterval(function() {
   document.getElementById("minutesCounter").textContent = String(minutes).padStart(2,'0');;
   document.getElementById("secondsCounter").textContent = String(seconds).padStart(2,'0');
 
+
+  
   // If the count down is finished
   if (distance < 0) {
     clearInterval(x);
   }
 }, 1000); // 1000 ms
+
+document.getElementById("leaderBoardButton").addEventListener('click', () => {
+  document.getElementById("leaderboards").classList.remove("hidden");
+})
+
+document.getElementById("leaderboardsCloseButton").addEventListener('click', () => {
+  document.getElementById("leaderboards").classList.add("hidden");
+
+  console.log(floor(0))
+})

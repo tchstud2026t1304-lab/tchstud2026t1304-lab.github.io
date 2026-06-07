@@ -46,6 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const newsBlockNodes = document.getElementById("newPaperBlock").children;
   if (newsBlockNodes.length != 0) {
     newsBlockNodes[0].classList.add("newPaperBlockFirst");
-    newsBlockNodes[newsBlockNodes.length-1].classList.add("newPaperBlockLast");
+    newsBlockNodes[newsBlockNodes.length-1].classList.remove("hidden");
   }
 })
