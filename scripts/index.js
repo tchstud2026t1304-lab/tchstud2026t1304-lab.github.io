@@ -48,6 +48,4 @@ document.getElementById("leaderBoardButton").addEventListener('click', () => {
 
 document.getElementById("leaderboardsCloseButton").addEventListener('click', () => {
   document.getElementById("leaderboards").classList.add("hidden");
-
-  console.log(floor(0))
 })
